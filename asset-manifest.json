@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Qoreebullah-Portfolio/static/css/main.e1a85989.css",
-    "main.js": "/Qoreebullah-Portfolio/static/js/main.eaea5a83.js",
+    "main.js": "/Qoreebullah-Portfolio/static/js/main.1c31b0d2.js",
     "static/media/Cake face.png": "/Qoreebullah-Portfolio/static/media/Cake face.fe352cc32f59fa138985.png",
     "static/media/Space home.png": "/Qoreebullah-Portfolio/static/media/Space home.3468568fc4337f51ab13.png",
     "static/media/Mask group.jpg": "/Qoreebullah-Portfolio/static/media/Mask group.14a3cc1f48f70830035c.jpg",
@@ -34,10 +34,10 @@
     "static/media/fa-v4compatibility.woff2": "/Qoreebullah-Portfolio/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
     "index.html": "/Qoreebullah-Portfolio/index.html",
     "main.e1a85989.css.map": "/Qoreebullah-Portfolio/static/css/main.e1a85989.css.map",
-    "main.eaea5a83.js.map": "/Qoreebullah-Portfolio/static/js/main.eaea5a83.js.map"
+    "main.1c31b0d2.js.map": "/Qoreebullah-Portfolio/static/js/main.1c31b0d2.js.map"
   },
   "entrypoints": [
     "static/css/main.e1a85989.css",
-    "static/js/main.eaea5a83.js"
+    "static/js/main.1c31b0d2.js"
   ]
 }
