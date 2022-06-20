@@ -1,4 +1,4 @@
-@import url("httpss://fonts.googleapis.com/css2family=Sigmar+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap");
 
 * {
 	margin: 0;
@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: helvetica;
 	background-color: #151515;
 	color: white;
 	scroll-behavior: smooth;
@@ -14,17 +14,17 @@ body {
 }
 @font-face {
 	font-family: "camar";
-	src: url(./fonts/Camar.otf);
+	src: url(./fonts/camar.otf);
 	font-family: "ilyas";
 	src: url(./fonts/ilyas.otf);
 }
 @font-face {
 	font-family: helvetiva;
-	src: url(./fonts/HelveticaNeue\ Medium.ttf);
+	src: url(./fonts/helveticaneuemedium.ttf);
 }
 @font-face {
 	font-family: grafita;
-	src: url(./fonts/Grafita\ Special\ DEMO.otf);
+	src: url(./fonts/grafitadpecialdEMO.otf);
 }
 .App {
 	max-width: 1800px;
@@ -62,8 +62,8 @@ section {
 .first-page img {
 	width: 20vw;
 	height: 20vw;
-  max-width: 500px;
-  max-height: 500px;
+	max-width: 500px;
+	max-height: 500px;
 	border-radius: 50%;
 	margin-top: 5%;
 }
@@ -132,12 +132,12 @@ button:hover {
 	display: inline-block;
 }
 .loading .hyphen {
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 }
 .loading h1 {
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 	font-size: 100px;
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 	margin: 13% 5%;
 	letter-spacing: 5px;
 	line-height: 150px;
@@ -276,7 +276,7 @@ nav > .socials-hi-main {
 .hamburger-page-navlinks-children a {
 	padding: 20px 100px 20px 0;
 	margin-left: 0;
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 	font-size: 5vw;
 	text-transform: uppercase;
 }
@@ -309,7 +309,7 @@ main .main .no,
 main .main .main-text {
 	font-size: 120px;
 	text-transform: uppercase;
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 }
 main .main .scroll {
 	position: absolute;
@@ -368,7 +368,7 @@ main .japan {
 	border-bottom: 2px solid #fff;
 	font-size: 120px;
 	text-transform: uppercase;
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 }
 .project-grid-container {
 	display: flex;
@@ -639,7 +639,7 @@ article {
 	background-color: #efefef;
 	color: #151515;
 	height: 80vh;
-  max-height: 2000px;
+	max-height: 2000px;
 	display: flex;
 	overflow-x: hidden;
 }
@@ -683,7 +683,7 @@ article {
 	flex: 1;
 }
 .about-moving .camar {
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 	flex: 1;
 }
 /* works end */
@@ -707,7 +707,7 @@ article {
 	margin: 100px 2% 0 30%;
 	width: 45%;
 	font-size: 35px;
-  font-family: helvetica;
+	font-family: helvetica;
 }
 .about .about-desc p:last-child {
 	margin-top: 30px;
@@ -829,7 +829,7 @@ article {
 	white-space: nowrap;
 }
 .camar:nth-child(even) {
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 }
 @keyframes horizontal-moving {
 	from {
@@ -908,7 +908,7 @@ article {
 }
 .contact .to {
 	font-size: 80px;
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 	letter-spacing: 10px;
 	width: 70vw;
 	font-weight: 100;
@@ -951,7 +951,7 @@ article {
 	padding: 100px 100px;
 	font-size: 80px;
 	letter-spacing: 5px;
-	font-family: camar, "Sigmar One", cursive;
+	font-family: camar, 'Epilogue', sans-serif;
 	background-color: #efefef;
 	color: #151515;
 }
@@ -1001,10 +1001,10 @@ article {
 	max-height: 100vh;
 }
 .error img {
-  width: 15vw;
-  height: 15vw;
-  max-width: 400px;
-  max-height: 400px;
+	width: 15vw;
+	height: 15vw;
+	max-width: 400px;
+	max-height: 400px;
 	border-radius: 50%;
 	margin: 0% auto 5%;
 }
@@ -1049,7 +1049,7 @@ article {
 	.about-img-container div {
 		font-size: 16px;
 		line-height: 30px;
-    min-width: 30vw;
+		min-width: 30vw;
 	}
 }
 @media (max-width: 1300px) {
@@ -1088,7 +1088,7 @@ article {
 		border-bottom: 2px solid #fff;
 		font-size: 70px;
 		text-transform: uppercase;
-		font-family: camar, "Sigmar One", cursive;
+		font-family: camar, 'Epilogue', sans-serif;
 	}
 	.projects-grid {
 		gap: 30px;
@@ -1237,7 +1237,7 @@ article {
 		}
 		nav ul li {
 			font-size: 50px;
-			font-family: camar, "Sigmar One", cursive;
+			font-family: camar, 'Epilogue', sans-serif;
 			margin-left: 0;
 		}
 		nav ul li a {
@@ -1290,7 +1290,7 @@ article {
 			width: 100vw;
 			margin-top: 0;
 			height: 40vh;
-      display: none;
+			display: none;
 		}
 		.headers,
 		.create-header {
@@ -1568,7 +1568,7 @@ article {
 	}
 }
 @media (min-width: 2000px) {
-  .about-absolute p {
-    font-size: 30px;
-  }
+	.about-absolute p {
+		font-size: 30px;
+	}
 }

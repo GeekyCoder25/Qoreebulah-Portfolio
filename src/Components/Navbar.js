@@ -82,11 +82,11 @@ const Navbar = () => {
 			navbar.classList.remove("nav-height");
 		}
 	};
-	window.onresize = () => {
-		if (width > 900) {
-			window.location.reload();
-		}
-	};
+	// window.onresize = () => {
+	// 	if (width > 900) {
+	// 		window.location.reload();
+	// 	}
+	// };
 	return (
 		<nav>
 			<div className="nav-header">
