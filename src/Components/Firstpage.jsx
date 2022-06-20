@@ -8,21 +8,21 @@ const Firstpage = () => {
 
 
     const handleNavigate = () => {
-        const first = document.querySelector('.first-page')
+        const first = document.querySelector('.first-page');
         first.classList.add('first-page-animation');
         setTimeout(() => navigate(`/loading`), 1000)
     }
     return (
-        <div className="first-page">
+        <article className="first-page">
             <img src={mine} alt="Qoreeb" />
             <h1>
                 WELCOME <br />You're accessing Qoreebullah Abubakar's Portfolio Website, hope you have a nice time👋 <br /> 
-                <Link to={`/loading`}>
+                <Link to="" onKeyUp={handleNavigate}>
                     <i className="fas fa-angles-down" onClick={handleNavigate}></i>
                 </Link>
             </h1>
 
-        </div>
+        </article>
     );
 }
 

@@ -1,7 +1,8 @@
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  HashRouter
 } from "react-router-dom";
 import './App.css';
 import "./fontawesome-free-6.1.1-web/css/all.css";
@@ -12,11 +13,13 @@ import About from "./Components/About";
 import Works from "./Components/Works";
 import Error from "./Components/Error";
 import Firstpage from "./Components/Firstpage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Firstpage />} />
           <Route path="/loading" element={<Loading />} />
@@ -26,7 +29,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </div>
   );
 }

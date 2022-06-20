@@ -1,4 +1,3 @@
-
 import arrow from "../images/Vector 1.png"
 import Socials from "./Socials";
 const Create = () => {

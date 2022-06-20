@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <main>
+            <main className="home">
                 <div className="main">
                     <p className="no">01</p>
                     <p className="main-text">i design <br />unique user <br />experience and <br />digital <br /> user interface</p>
