@@ -1,4 +1,4 @@
-/* @import url("httpss://fonts.googleapis.com/css2family=Sigmar+One&display=swap"); */
+@import url("httpss://fonts.googleapis.com/css2family=Sigmar+One&display=swap");
 
 * {
 	margin: 0;
@@ -35,13 +35,7 @@ button {
 	max-width: 300px;
 	max-height: 300px;
 }
-/* article {
-  animation: page 1s ease;
-} */
 section {
-	animation: page 1.5s ease;
-}
-main {
 	animation: page 1.5s ease;
 }
 @keyframes page {
@@ -304,7 +298,7 @@ main .main {
 	padding: 15% 5% 5% 20%;
 	position: relative;
 	height: 95vh;
-	max-height: 1000px;
+	max-height: 900px;
 }
 main .main .no,
 .works .main .no {

@@ -14,7 +14,7 @@ const Navbar = () => {
 		let navcontent = document.querySelector(".nav-content");
 		let active = document.querySelector(".active");
 
-		if (width > 1000) {
+		if (width > 900) {
 			navbar.classList.add("hamburger-page");
 			navlinks.style.display = "flex";
 			navlinks.style.marginLeft = "0";
@@ -82,11 +82,11 @@ const Navbar = () => {
 			navbar.classList.remove("nav-height");
 		}
 	};
-	// window.onresize = () => {
-	// 	if (width > 1000) {
-	// 		window.location.reload();
-	// 	}
-	// };
+	window.onresize = () => {
+		if (width > 900) {
+			window.location.reload();
+		}
+	};
 	return (
 		<nav>
 			<div className="nav-header">
