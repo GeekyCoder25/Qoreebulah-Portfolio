@@ -1,33 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+:root {
+	--darkmodecolor: #fff;
+	--darkmodebackcolor: #151515;
+	--darkmodebordercolor: #fff;
+	--darkmodestrokecolor: #fff;
+	--circlebordercolor: rgba(255, 255, 255, 0.6);
+}
 body {
 	font-family: helvetica;
-	background-color: #151515;
-	color: white;
+	background-color: var(--darkmodebackcolor);
+	color: var(--darkmodecolor);
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
 @font-face {
-	font-family: "camar";
-	src: url(./fonts/camar.otf);
-	font-family: "ilyas";
-	src: url(./fonts/ilyas.otf);
+	font-family: 'camar';
+	src: url('./fonts/camar.otf');
+	font-family: 'ilyas';
+	src: url('./fonts/ilyas.otf');
 }
 @font-face {
 	font-family: helvetiva;
-	src: url(./fonts/helveticaneuemedium.ttf);
+	src: url('./fonts/helveticaneuemedium.ttf');
 }
 @font-face {
 	font-family: grafita;
-	src: url(./fonts/grafitadpecialdEMO.otf);
+	src: url('./fonts/grafitadpecialdEMO.otf');
 }
 .App {
-	max-width: 1800px;
+	max-width: 1700px;
 	margin: auto;
 	position: relative;
 }
@@ -45,6 +52,17 @@ section {
 	to {
 		transform: translateY(0);
 	}
+}
+.mode {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 2vw;
+	cursor: pointer;
+	z-index: 9999;
+}
+.mode .fa-moon {
+	display: none;
 }
 .first-page,
 .error {
@@ -98,7 +116,7 @@ section {
 	}
 }
 a {
-	color: white;
+	color: var(--darkmodecolor);
 	text-decoration: none;
 }
 .app {
@@ -111,7 +129,7 @@ button {
 	align-items: center;
 	border-radius: 50%;
 	border: none;
-	color: #fff;
+	color: var(--darkmodecolor);
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
@@ -127,7 +145,7 @@ button:hover {
 }
 .loading .countdown {
 	margin: 0 20px 0 100px;
-	font-size: 110px;
+	/* font-size: 10px; */
 	width: 27%;
 	display: inline-block;
 }
@@ -150,7 +168,7 @@ button:hover {
 	color: transparent;
 	/* font-family: ilyas; */
 	font-weight: 100;
-	-webkit-text-stroke-color: #fff;
+	-webkit-text-stroke-color: var(--darkmodecolor);
 	-webkit-text-stroke-width: 1px;
 	animation: fontchanger 1s ease infinite;
 }
@@ -159,7 +177,7 @@ button:hover {
 		font-family: ilyas;
 	}
 	to {
-		color: #fff;
+		color: var(--darkmodecolor);
 		font-family: camar;
 	}
 }
@@ -180,10 +198,14 @@ nav {
 	gap: 30px;
 	align-items: center;
 	width: 100vw;
-	background-color: #151515;
+	background-color: var(--darkmodebackcolor);
 	position: fixed;
 	z-index: 999;
 	max-width: 1800px;
+}
+.nav-light-mode {
+	background-color: white !important;
+	color: #3f7df4;
 }
 nav .hamburger {
 	cursor: pointer;
@@ -227,7 +249,6 @@ nav ul li {
 	font-family: helvetica;
 }
 nav ul li a {
-	text-decoration: none;
 	display: inline-block;
 	font-size: 40px;
 }
@@ -251,14 +272,17 @@ nav > .socials-hi-main {
 .active {
 	font-family: ilyas !important;
 	color: transparent;
-	-webkit-text-stroke-color: #fff;
+	-webkit-text-stroke-color: var(--darkmodestrokecolor);
 	-webkit-text-stroke-width: 1px;
+}
+.active-mobile a {
+	text-transform: uppercase;
 }
 .active-hamburger a {
 	font-size: 120px;
 	font-family: ilyas !important;
 	color: transparent;
-	-webkit-text-stroke-color: #fff;
+	-webkit-text-stroke-color: var(--darkmodestrokecolor);
 	-webkit-text-stroke-width: 1px;
 }
 .hamburger-page {
@@ -300,6 +324,11 @@ main .main {
 	height: 95vh;
 	max-height: 900px;
 }
+.home {
+	align-items: center;
+	justify-content: center;
+}
+
 main .main .no,
 .works .main .no {
 	font-size: 70px;
@@ -317,7 +346,7 @@ main .main .scroll {
 	left: 120px;
 	font-size: 30px;
 	font-weight: 750;
-	color: rgba(255, 255, 255, 0.6);
+	color: var(--circlebordercolor);
 	font-family: helvetica;
 }
 main section {
@@ -365,7 +394,7 @@ main .japan {
 .create .main-text {
 	width: 76%;
 	padding-bottom: 50px;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid;
 	font-size: 120px;
 	text-transform: uppercase;
 	font-family: camar, 'Epilogue', sans-serif;
@@ -406,7 +435,7 @@ main .japan {
 }
 .projects-grid div p {
 	display: flex;
-	border-bottom: 2px solid #d9d9d9;
+	border-bottom: 2px solid;
 	padding: 30px 0;
 	font-family: helvetica;
 	font-size: 27px;
@@ -417,7 +446,7 @@ main .japan {
 }
 .projects-grid i,
 .about i {
-	border: 1px solid #d9d9d9;
+	border: 1px solid;
 	width: 25vw;
 	height: 25vw;
 	display: flex;
@@ -498,7 +527,7 @@ article {
 }
 .about-absolute {
 	background-color: #3f7df4;
-	color: #fff;
+	color: var(--darkmodecolor);
 	position: absolute;
 	bottom: -25%;
 	left: 45%;
@@ -507,7 +536,7 @@ article {
 	padding-bottom: 50px;
 }
 .about-absolute div {
-	border-bottom: solid 1px #fff;
+	border-bottom: solid 1px var(--darkmodebordercolor);
 	padding: 30px 0;
 	display: flex;
 	justify-content: space-between;
@@ -530,7 +559,7 @@ article {
 .horizontal,
 .contact-me {
 	margin: 10% 0 0 24%;
-	border-top: 2px solid #fff;
+	border-top: 2px solid;
 	padding-top: 40px;
 	font-size: 25px;
 	font-family: helvetica;
@@ -547,7 +576,7 @@ article {
 	-ms-overflow-style: none;
 	overflow: hidden;
 	color: transparent;
-	-webkit-text-stroke-color: #fff;
+	-webkit-text-stroke-color: var(--darkmodestrokecolor);
 	-webkit-text-stroke-width: 1px;
 }
 .moving p {
@@ -587,7 +616,7 @@ article {
 	text-decoration: underline;
 }
 .create .small {
-	border-top: 2px solid #fff;
+	border-top: 2px solid;
 	padding-top: 30px;
 	margin: 200px auto auto 24%;
 	font-family: helvetica;
@@ -605,7 +634,7 @@ article {
 }
 .works .with-love {
 	font-size: 30px;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid;
 	padding-bottom: 50px;
 }
 .works .projects-grid {
@@ -622,13 +651,13 @@ article {
 	height: 25vw;
 	max-width: 700px;
 	max-height: 700px;
-	border: 1px solid rgba(255, 255, 255, 0.6);
+	border: 1px solid var(--circlebordercolor);
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 250px;
-	color: rgba(255, 255, 255, 0.6);
+	color: var(--circlebordercolor);
 }
 .works .more-works p {
 	font-size: 28px;
@@ -637,7 +666,7 @@ article {
 }
 .about-moving {
 	background-color: #efefef;
-	color: #151515;
+	color: var(--darkmodebackcolor);
 	height: 80vh;
 	max-height: 2000px;
 	display: flex;
@@ -650,7 +679,7 @@ article {
 	right: 0;
 	padding: 30px 50% 0 0;
 	margin-top: 10vh;
-	border-top: 2px solid #151515;
+	border-top: 2px solid;
 }
 .about-moving div {
 	display: flex;
@@ -694,14 +723,15 @@ article {
 	font-size: 500%;
 	text-transform: uppercase;
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #fff;
+	-webkit-text-stroke-color: var(--darkmodestrokecolor);
 	color: transparent;
 	position: absolute;
 	bottom: -50px;
 	width: 70%;
 	padding: 0 5% 20px 15%;
 	right: 0;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid;
+	border-color: var(--darkmodebordercolor);
 }
 .about .about-desc {
 	margin: 100px 2% 0 30%;
@@ -727,7 +757,7 @@ article {
 }
 .about-arrow-container .my-services {
 	margin-left: auto;
-	border-top: 2px solid #fff;
+	border-top: 2px solid;
 	padding-right: 20%;
 }
 .about-arrow-container .my-services h3 {
@@ -804,7 +834,7 @@ article {
 	width: 80%;
 }
 .certificates .certificates-test {
-	border-top: 2px solid #fff;
+	border-top: 2px solid;
 	padding-top: 20px;
 	padding-right: 20%;
 }
@@ -822,7 +852,7 @@ article {
 	font-size: 8vw;
 	-webkit-text-stroke-width: 1px;
 	color: transparent;
-	-webkit-text-stroke-color: #fff;
+	-webkit-text-stroke-color: var(--darkmodestrokecolor);
 	font-family: ilyas;
 	animation: horizontal-moving 8s linear infinite;
 	margin-top: 100px;
@@ -897,7 +927,7 @@ article {
 }
 @keyframes blinking {
 	from {
-		opacity: 0;
+		opacity: 0.2;
 	}
 	to {
 		opacity: 1;
@@ -924,7 +954,7 @@ article {
 	position: absolute;
 	top: 25%;
 	right: 30%;
-	color: #fff;
+	color: var(--darkmodecolor);
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
@@ -944,7 +974,7 @@ article {
 	line-height: 22px;
 }
 .contact-me {
-	border-top: 2px solid #151515;
+	border-top: 2px solid;
 }
 .form {
 	min-height: 100vh;
@@ -953,7 +983,7 @@ article {
 	letter-spacing: 5px;
 	font-family: camar, 'Epilogue', sans-serif;
 	background-color: #efefef;
-	color: #151515;
+	color: var(--darkmodebackcolor);
 }
 .form h1 {
 	margin: 5% 0 0 24%;
@@ -967,7 +997,7 @@ article {
 	margin: 30px 20px;
 	background: transparent;
 	border: none;
-	border-bottom: 2px solid #151515;
+	border-bottom: 2px solid;
 	padding: 10px 0;
 	flex: 2;
 	outline: none;
@@ -1073,7 +1103,7 @@ article {
 		font-size: 50px;
 	}
 	main .main .main-text {
-		font-size: 70px;
+		font-size: 80px;
 	}
 	main .japan {
 		width: 80vw;
@@ -1085,7 +1115,7 @@ article {
 	header .main-text {
 		width: 75%;
 		padding-bottom: 50px;
-		border-bottom: 2px solid #fff;
+		border-bottom: 2px solid;
 		font-size: 70px;
 		text-transform: uppercase;
 		font-family: camar, 'Epilogue', sans-serif;
@@ -1159,6 +1189,14 @@ article {
 			width: 98vw;
 			margin: auto;
 		}
+		.mode {
+			position: fixed;
+			top: 30px;
+			right: 20px;
+			font-size: 5vw;
+			cursor: pointer;
+			z-index: 999;
+		}
 		/* first page mobile */
 		.first-page img {
 			margin-top: 50%;
@@ -1197,7 +1235,7 @@ article {
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: space-between;
-			padding: 5% 7% 1%;
+			padding: 5% 4% 1%;
 		}
 		.nav-height {
 			height: 100vh;
@@ -1239,6 +1277,7 @@ article {
 			font-size: 50px;
 			font-family: camar, 'Epilogue', sans-serif;
 			margin-left: 0;
+			text-transform: uppercase;
 		}
 		nav ul li a {
 			padding: 20px 100px 20px 0;
@@ -1360,10 +1399,11 @@ article {
 			order: -1;
 		}
 		.about-absolute {
-			background-color: #3f7df4;
-			color: #fff;
 			position: initial;
 			margin-top: 0;
+		}
+		.about-moving h1 {
+			font-size: 60px;
 		}
 		.work-with {
 			margin-top: 0;
@@ -1426,8 +1466,8 @@ article {
 			left: 0;
 			font-size: 20px;
 			padding-top: 10px;
+			padding-left: 10px;
 			margin-top: 8vh;
-			border-top: 1px solid #151515;
 		}
 		/* work mobile end */
 

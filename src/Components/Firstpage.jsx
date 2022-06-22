@@ -5,7 +5,7 @@ import mine from "../images/Qoreeb Picture.png"
 
 const Firstpage = () => {
     const navigate = useNavigate();
-
+    
 
     const handleNavigate = () => {
         const first = document.querySelector('.first-page');
