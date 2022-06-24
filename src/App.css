@@ -19,6 +19,9 @@ body {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
+body article {
+	animation: appear 1s ease 1;
+}
 @font-face {
 	font-family: 'camar';
 	src: url('./fonts/camar.otf');
@@ -160,17 +163,39 @@ button:hover {
 	letter-spacing: 5px;
 	line-height: 150px;
 }
+.loading h1 span {
+	display: inline-block;
+}
+.loading h1 span:nth-child(2) {
+	animation: appear 0.5s ease 1;
+}
+.loading h1 span:nth-child(4) {
+	animation: appear 0.75s ease 1;
+	}
+.loading h1 span:nth-child(6) {
+	animation: appear 1s ease 1;
+}
+@keyframes appear {
+	from {
+		transform: translateY(100px);
+		color: var(--darkmodebackcolor)
+	}
+	to {
+		transform: translateY(0px);
+		color: var(--darkmodecolor)
+	}
+}
 .loading h1 .countdown {
 	font-family: ilyas;
 	font-weight: 100;
 }
-.loading h1 .now {
+.now {
 	color: transparent;
-	/* font-family: ilyas; */
 	font-weight: 100;
 	-webkit-text-stroke-color: var(--darkmodecolor);
 	-webkit-text-stroke-width: 1px;
 	animation: fontchanger 1s ease infinite;
+
 }
 @keyframes fontchanger {
 	from {
@@ -181,9 +206,15 @@ button:hover {
 		font-family: camar;
 	}
 }
-.now-animation {
+.loading-complete {
+	color: rgba(255, 255, 255, 0);
+	background-color: black;
+	transition: all 1.2s ease;
+}
+.loading-complete-now {
+	-webkit-text-stroke-color: transparent;
 	animation: unset;
-	font-family: ilyas;
+	transition: all 1.2s ease;
 }
 .loading > p {
 	bottom: 10%;
@@ -527,7 +558,7 @@ article {
 }
 .about-absolute {
 	background-color: #3f7df4;
-	color: var(--darkmodecolor);
+	color: #fff;
 	position: absolute;
 	bottom: -25%;
 	left: 45%;
@@ -536,7 +567,7 @@ article {
 	padding-bottom: 50px;
 }
 .about-absolute div {
-	border-bottom: solid 1px var(--darkmodebordercolor);
+	border-bottom: solid 1px #fff;
 	padding: 30px 0;
 	display: flex;
 	justify-content: space-between;
@@ -985,6 +1016,12 @@ article {
 	background-color: #efefef;
 	color: var(--darkmodebackcolor);
 }
+.form-light{
+	--formbackcolor: #000;
+	background-color: var(--formbackcolor);
+	color: #fff;
+	
+}
 .form h1 {
 	margin: 5% 0 0 24%;
 }
@@ -1001,7 +1038,7 @@ article {
 	padding: 10px 0;
 	flex: 2;
 	outline: none;
-	color: black;
+	color: var(--darkmodebackcolor);
 	text-align: center;
 }
 .form input::placeholder {
@@ -1010,7 +1047,7 @@ article {
 .form button {
 	width: 10vw;
 	height: 10vw;
-	color: black;
+	color: var(--formbackcolor);
 }
 .form .submit {
 	display: flex;

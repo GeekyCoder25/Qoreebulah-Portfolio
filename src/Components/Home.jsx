@@ -10,6 +10,7 @@ const light = document.getElementsByClassName('fa-circle-half-stroke');
 
 const Mode = () => {
 	const handleLightMode = () => {
+		// const form = document.querySelector('form');
 		const nav = document.querySelector('nav');
 		document.documentElement.style.setProperty(
 			'--darkmodecolor',
@@ -32,8 +33,11 @@ const Mode = () => {
 		dark[0].style.display = 'block';
 		document.body.style.backgroundColor = '#fff';
 		nav.style.backgroundColor = document.body.style.backgroundColor;
+		// form.classList.add('form-light');
+		
 	};
 	const handleDarkMode = () => {
+		// const form = document.querySelector('form');
 		const nav = document.querySelector('nav');
 		document.documentElement.style.setProperty(
 			'--darkmodebackcolor',
@@ -45,11 +49,20 @@ const Mode = () => {
 			'--darkmodestrokecolor',
 			'white'
 		);
-		document.documentElement.style.setProperty('--circlebordercolor', 'rgba(255, 255, 255, 0.6)');
+		document.documentElement.style.setProperty(
+			'--circlebordercolor',
+			'rgba(255, 255, 255, 0.6)'
+			);
+
 		light[0].style.display = 'block';
 		dark[0].style.display = 'none';
 		document.body.style.backgroundColor = '#151515';
 		nav.style.backgroundColor = document.body.style.backgroundColor;
+		document.documentElement.style.setProperty(
+			'#000',
+			'--specialbacklightcolor'
+			);
+			// form.classList.remove('form-light');
 	};
 
 	return (
@@ -67,26 +80,28 @@ const Home = () => {
 		<>
 			<Navbar />
 			<main className="home">
-				<div className="main">
-					<p className="no">01</p>
-					<p className="main-text">
-						i design <br />
-						unique user <br />
-						experience and <br />
-						digital <br /> user interface
-					</p>
-					<p className="scroll">Scroll</p>
-				</div>
-				<section className="japan-container">
-					<img src={japan_img} alt="japan_img" className="japan" />
-					<div className="play">
-						<i className="fas fa-play fa-5x"></i>
+				<article>
+					<div className="main">
+						<p className="no">01</p>
+						<p className="main-text">
+							i design <br />
+							unique user <br />
+							experience and <br />
+							digital <br /> user interface
+						</p>
+						<p className="scroll">Scroll</p>
 					</div>
-				</section>
-				<Projects />
-				<AboutMini />
-				<WorkWith />
-				<Create />
+					<section className="japan-container">
+						<img src={japan_img} alt="japan_img" className="japan" />
+						<div className="play">
+							<i className="fas fa-play fa-5x"></i>
+						</div>
+					</section>
+					<Projects />
+					<AboutMini />
+					<WorkWith />
+					<Create />
+				</article>
 			</main>
 		</>
 	);

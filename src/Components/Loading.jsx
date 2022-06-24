@@ -9,6 +9,7 @@ const Loading = () => {
 	const navigate = useNavigate();
 
 	const now = document.querySelector(".now");
+	const loadingContent = document.querySelector('.loading');
 	const date = new Date();
 	const hour = date.getHours();
 	useEffect(() => {
@@ -16,12 +17,17 @@ const Loading = () => {
 			if (countdown < 100) {
 				setcountdown(countdown + 1);
 			} else if (countdown >= 100) {
-				setTimeout(() => navigate(`/home`), 1000);
-				now.classList.add("now-animation");
+				setTimeout(
+					() => loadingContent.classList.add('first-page-animation'),
+					1500
+				);
+				setTimeout(() => navigate(`/home`), 2000);
+				loadingContent.classList.add('loading-complete');
+				now.classList.add('loading-complete-now');
 			}
 		}, 20);
 		return () => clearInterval(interval);
-	}, [countdown, navigate, now]);
+	}, [countdown, navigate, now, loadingContent]);
 
 	useEffect(() => {
 		let audio = document.getElementById("audio1");
@@ -40,9 +46,9 @@ const Loading = () => {
 					{countdown < 10 ? "0" + countdown : countdown}
 					<span className="hyphen"> - </span>100
 				</span>
-				YOUR <br />
-				WEB EXPERIENCE <br />
-				IS LOADING RIGHT <span className="now">NOW</span>
+				<span>YOUR</span> <br />
+				<span>WEB EXPERIENCE</span> <br />
+				<span>IS LOADING RIGHT <span className="now">NOW</span></span>
 			</h1>
 			<p>
 				Please wait <br /> a few seconds
