@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import Socials from './Socials';
 
 const Navbar = () => {
-	const width = window.screen.width;
+	const width = window.innerWidth;
 	const handleHamburger = () => {
 		let navlinks = document.querySelector('.navlinks');
 		let navaside = document.querySelector('.nav-aside');
