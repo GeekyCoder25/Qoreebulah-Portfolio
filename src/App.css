@@ -1045,7 +1045,6 @@ article {
 .form button {
 	width: 10vw;
 	height: 10vw;
-	color: var(--formbackcolor);
 }
 .form .submit {
 	display: flex;
