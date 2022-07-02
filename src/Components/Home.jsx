@@ -34,7 +34,6 @@ const Mode = () => {
 		document.body.style.backgroundColor = '#fff';
 		nav.style.backgroundColor = document.body.style.backgroundColor;
 		// form.classList.add('form-light');
-		
 	};
 	const handleDarkMode = () => {
 		// const form = document.querySelector('form');
@@ -52,7 +51,7 @@ const Mode = () => {
 		document.documentElement.style.setProperty(
 			'--circlebordercolor',
 			'rgba(255, 255, 255, 0.6)'
-			);
+		);
 
 		light[0].style.display = 'block';
 		dark[0].style.display = 'none';
@@ -61,8 +60,8 @@ const Mode = () => {
 		document.documentElement.style.setProperty(
 			'#000',
 			'--specialbacklightcolor'
-			);
-			// form.classList.remove('form-light');
+		);
+		// form.classList.remove('form-light');
 	};
 
 	return (
@@ -86,8 +85,12 @@ const Home = () => {
 						<p className="main-text">
 							i design <br />
 							unique user <br />
-							experience and <br />
-							digital <br /> user interface
+							<span>
+								experience and <br />
+							</span>
+							<span>
+								digital <br /> user interface
+							</span>
 						</p>
 						<p className="scroll">Scroll</p>
 					</div>

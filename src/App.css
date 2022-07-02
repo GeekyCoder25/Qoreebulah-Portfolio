@@ -1637,6 +1637,11 @@ article {
 		/* error mobile */
 		.error img {
 			margin: 0% auto 10%;
+			width: 40vw;
+			height: 40vw;
+		}
+		.error a {
+			padding-bottom: 30%;
 		}
 		/* error mobile end */
 	}

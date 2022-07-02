@@ -16,7 +16,7 @@ const Navbar = () => {
 		
 		navbar.style.backgroundColor = document.body.style.backgroundColor;
 		active.classList.add('active-hamburger');
-		if (width > 900) {
+		if (width > 1000) {
 			navbar.classList.add('hamburger-page');
 			for (let i = 0; i < 4; i++) {
 				navlinks.children[i].classList.add('hamburger-page-navlinks-children');
