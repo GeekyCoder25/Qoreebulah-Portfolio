@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/Qoreebullah-Portfolio/static/css/main.b7301d33.css",
-    "main.js": "/Qoreebullah-Portfolio/static/js/main.6162a170.js",
+    "main.css": "/Qoreebullah-Portfolio/static/css/main.ae5caaf0.css",
+    "main.js": "/Qoreebullah-Portfolio/static/js/main.f2f2fe24.js",
     "static/media/Cake face.png": "/Qoreebullah-Portfolio/static/media/Cake face.fe352cc32f59fa138985.png",
     "static/media/Space home.png": "/Qoreebullah-Portfolio/static/media/Space home.3468568fc4337f51ab13.png",
-    "static/media/Mask group.jpg": "/Qoreebullah-Portfolio/static/media/Mask group.14a3cc1f48f70830035c.jpg",
     "static/media/Dragon face.png": "/Qoreebullah-Portfolio/static/media/Dragon face.3a885ac5631fc9fd13df.png",
     "static/media/fa-solid-900.ttf": "/Qoreebullah-Portfolio/static/media/fa-solid-900.e615bbcb258550973c16.ttf",
     "static/media/NFT.png": "/Qoreebullah-Portfolio/static/media/NFT.d9e5da702d8b9a552232.png",
@@ -12,9 +11,10 @@
     "static/media/Restaurant.png": "/Qoreebullah-Portfolio/static/media/Restaurant.37ae2d580d5e533c06db.png",
     "static/media/Glowing Angel.png": "/Qoreebullah-Portfolio/static/media/Glowing Angel.8aa6d7e0701f36daa755.png",
     "static/media/grafitadpecialdEMO.otf": "/Qoreebullah-Portfolio/static/media/grafitadpecialdEMO.21518d87366033065d94.otf",
-    "static/media/Qoreeb Picture.png": "/Qoreebullah-Portfolio/static/media/Qoreeb Picture.234109459bba5013cd30.png",
+    "static/media/QoreebPicture.png": "/Qoreebullah-Portfolio/static/media/QoreebPicture.234109459bba5013cd30.png",
     "static/media/E-learn.png": "/Qoreebullah-Portfolio/static/media/E-learn.e2a23932e116cc6984bb.png",
     "static/media/fa-brands-400.ttf": "/Qoreebullah-Portfolio/static/media/fa-brands-400.b823fc0dbb5a5f0c21bb.ttf",
+    "static/media/Qoreeb.png": "/Qoreebullah-Portfolio/static/media/Qoreeb.9fe8410baa4a5af3705b.png",
     "static/media/BB collection.png": "/Qoreebullah-Portfolio/static/media/BB collection.bf6b6dbb90b3aa90c184.png",
     "static/media/fa-solid-900.woff2": "/Qoreebullah-Portfolio/static/media/fa-solid-900.59edf72a325ac2048d60.woff2",
     "static/media/fa-brands-400.woff2": "/Qoreebullah-Portfolio/static/media/fa-brands-400.ebb7a127d2d8ee6f1832.woff2",
@@ -33,11 +33,11 @@
     "static/media/fa-v4compatibility.ttf": "/Qoreebullah-Portfolio/static/media/fa-v4compatibility.4baccb548138840fa33a.ttf",
     "static/media/fa-v4compatibility.woff2": "/Qoreebullah-Portfolio/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
     "index.html": "/Qoreebullah-Portfolio/index.html",
-    "main.b7301d33.css.map": "/Qoreebullah-Portfolio/static/css/main.b7301d33.css.map",
-    "main.6162a170.js.map": "/Qoreebullah-Portfolio/static/js/main.6162a170.js.map"
+    "main.ae5caaf0.css.map": "/Qoreebullah-Portfolio/static/css/main.ae5caaf0.css.map",
+    "main.f2f2fe24.js.map": "/Qoreebullah-Portfolio/static/js/main.f2f2fe24.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7301d33.css",
-    "static/js/main.6162a170.js"
+    "static/css/main.ae5caaf0.css",
+    "static/js/main.f2f2fe24.js"
   ]
 }
