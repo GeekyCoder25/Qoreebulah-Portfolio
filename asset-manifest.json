@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Qoreebullah-Portfolio/static/css/main.bdf62856.css",
-    "main.js": "/Qoreebullah-Portfolio/static/js/main.ed152298.js",
+    "main.css": "/Qoreebullah-Portfolio/static/css/main.ac2e9b3a.css",
+    "main.js": "/Qoreebullah-Portfolio/static/js/main.d05a5061.js",
     "static/media/Cake face.png": "/Qoreebullah-Portfolio/static/media/Cake face.fe352cc32f59fa138985.png",
     "static/media/Space home.png": "/Qoreebullah-Portfolio/static/media/Space home.3468568fc4337f51ab13.png",
     "static/media/Dragon face.png": "/Qoreebullah-Portfolio/static/media/Dragon face.3a885ac5631fc9fd13df.png",
@@ -11,12 +11,12 @@
     "static/media/Restaurant.png": "/Qoreebullah-Portfolio/static/media/Restaurant.37ae2d580d5e533c06db.png",
     "static/media/Glowing Angel.png": "/Qoreebullah-Portfolio/static/media/Glowing Angel.8aa6d7e0701f36daa755.png",
     "static/media/grafitadpecialdEMO.otf": "/Qoreebullah-Portfolio/static/media/grafitadpecialdEMO.21518d87366033065d94.otf",
-    "static/media/QoreebPicture.png": "/Qoreebullah-Portfolio/static/media/QoreebPicture.234109459bba5013cd30.png",
     "static/media/E-learn.png": "/Qoreebullah-Portfolio/static/media/E-learn.e2a23932e116cc6984bb.png",
     "static/media/fa-brands-400.ttf": "/Qoreebullah-Portfolio/static/media/fa-brands-400.b823fc0dbb5a5f0c21bb.ttf",
     "static/media/Qoreeb.png": "/Qoreebullah-Portfolio/static/media/Qoreeb.9fe8410baa4a5af3705b.png",
     "static/media/BB collection.png": "/Qoreebullah-Portfolio/static/media/BB collection.bf6b6dbb90b3aa90c184.png",
     "static/media/fa-solid-900.woff2": "/Qoreebullah-Portfolio/static/media/fa-solid-900.59edf72a325ac2048d60.woff2",
+    "static/media/QoreebPicture.png": "/Qoreebullah-Portfolio/static/media/QoreebPicture.5a3610b687ca780bba98.png",
     "static/media/fa-brands-400.woff2": "/Qoreebullah-Portfolio/static/media/fa-brands-400.ebb7a127d2d8ee6f1832.woff2",
     "static/media/14G.png": "/Qoreebullah-Portfolio/static/media/14G.370ee3bfdbaa774e1e48.png",
     "static/media/naruto-crying.gif": "/Qoreebullah-Portfolio/static/media/naruto-crying.ab5557ac6d23c529845f.gif",
@@ -33,11 +33,11 @@
     "static/media/fa-v4compatibility.ttf": "/Qoreebullah-Portfolio/static/media/fa-v4compatibility.4baccb548138840fa33a.ttf",
     "static/media/fa-v4compatibility.woff2": "/Qoreebullah-Portfolio/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
     "index.html": "/Qoreebullah-Portfolio/index.html",
-    "main.bdf62856.css.map": "/Qoreebullah-Portfolio/static/css/main.bdf62856.css.map",
-    "main.ed152298.js.map": "/Qoreebullah-Portfolio/static/js/main.ed152298.js.map"
+    "main.ac2e9b3a.css.map": "/Qoreebullah-Portfolio/static/css/main.ac2e9b3a.css.map",
+    "main.d05a5061.js.map": "/Qoreebullah-Portfolio/static/js/main.d05a5061.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdf62856.css",
-    "static/js/main.ed152298.js"
+    "static/css/main.ac2e9b3a.css",
+    "static/js/main.d05a5061.js"
   ]
 }
