@@ -24,13 +24,13 @@ body {
 	cursor: url(./images/cursor.png), pointer;
 }
 body a {
-	transition: all 0.5s ease;
 	cursor: url(./images/cursor.png), pointer !important;
 }
 button {
 	cursor: url(./images/cursor.png), pointer !important;
 }
 body a:hover {
+	transition: all 0.5s ease;
 	transform: translateY(10px) !important;
 }
 @font-face {
@@ -657,10 +657,8 @@ i > img {
 .create {
 	padding-bottom: 100px;
 }
-.create .main-text {
-	transition: all 0.3s ease;
-}
-.create .main-text:hover a {
+.create .main-text a:hover {
+	transition: all 0.3s linear;
 	font-style: italic;
 	font-family: ilyas;
 	color: transparent;
@@ -1813,7 +1811,7 @@ i > img {
 			min-height: 130px;
 		}
 		.contact-footer {
-			width: 100%; 
+			width: 100%;
 		}
 		.form {
 			padding: 50px 3% 25% 3%;
