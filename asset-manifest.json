@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Qoreebulah-Portfolio/static/css/main.6e6fe13c.css",
-    "main.js": "/Qoreebulah-Portfolio/static/js/main.84a30baa.js",
+    "main.css": "/Qoreebulah-Portfolio/static/css/main.22bf72cb.css",
+    "main.js": "/Qoreebulah-Portfolio/static/js/main.ed7d70f8.js",
     "static/media/CakeFace.png": "/Qoreebulah-Portfolio/static/media/CakeFace.fe352cc32f59fa138985.png",
     "static/media/SpaceHome.png": "/Qoreebulah-Portfolio/static/media/SpaceHome.3468568fc4337f51ab13.png",
     "static/media/DragonFace.png": "/Qoreebulah-Portfolio/static/media/DragonFace.3a885ac5631fc9fd13df.png",
@@ -26,11 +26,11 @@
     "static/media/ilyas.otf": "/Qoreebulah-Portfolio/static/media/ilyas.3124ef3b1ff873e973b3.otf",
     "static/media/Azu-nyan Ohayo.mp3": "/Qoreebulah-Portfolio/static/media/Azu-nyan Ohayo.95141773a93cb896b33a.mp3",
     "index.html": "/Qoreebulah-Portfolio/index.html",
-    "main.6e6fe13c.css.map": "/Qoreebulah-Portfolio/static/css/main.6e6fe13c.css.map",
-    "main.84a30baa.js.map": "/Qoreebulah-Portfolio/static/js/main.84a30baa.js.map"
+    "main.22bf72cb.css.map": "/Qoreebulah-Portfolio/static/css/main.22bf72cb.css.map",
+    "main.ed7d70f8.js.map": "/Qoreebulah-Portfolio/static/js/main.ed7d70f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e6fe13c.css",
-    "static/js/main.84a30baa.js"
+    "static/css/main.22bf72cb.css",
+    "static/js/main.ed7d70f8.js"
   ]
 }
