@@ -2,7 +2,7 @@ import Headers from './Headers';
 import profile from '../images/Qoreeb.png';
 const AboutMini = () => {
 	return (
-		<div className="about">
+		<div className="about-mini">
 			<Headers no={'03'} text={'About Me'} />
 			<div className="about-absolute-container">
 				<div className="about-text" data-aos="fade-right">

@@ -159,6 +159,7 @@ button {
 }
 button:hover {
 	background: transparent;
+	color: var(--darkmodecolor);
 	border: 1px solid #4cad2a;
 }
 .loading {
@@ -378,7 +379,8 @@ main .main {
 	padding: 15% 5% 5% 20%;
 	position: relative;
 	height: 95vh;
-	max-height: 1200px;
+	min-height: 700px;
+	max-height: 1000px;
 }
 .home {
 	align-items: center;
@@ -558,29 +560,29 @@ i > img {
 	font-size: 28px;
 	margin-bottom: 250px;
 }
-.about-text {
+.about-mini .about-text {
 	font-size: 40px;
 	font-weight: 100;
 	line-height: 50px;
 	width: 80%;
 }
-.about-absolute-container {
+.about-mini .about-absolute-container {
 	position: relative;
 	width: 60%;
 	margin: auto;
 	padding-left: 5%;
 }
-.about-img-container {
+.about-mini .about-img-container {
 	width: 100%;
 	margin: 30px 0;
 }
-.about-img-container img {
+.about-mini .about-img-container img {
 	flex: 1;
 	width: 60%;
 	background-color: var(--darkmodegridimagebgcolor);
 	filter: grayscale(100%);
 }
-.about-absolute {
+.about-mini .about-absolute {
 	background-color: #3f7df4;
 	color: #fff;
 	position: absolute;
@@ -591,7 +593,7 @@ i > img {
 	padding-bottom: 50px;
 	margin-top: 0;
 }
-.about-absolute div {
+.about-mini .about-absolute div {
 	border-bottom: solid 1px #fff;
 	padding: 30px 0;
 	display: flex;
@@ -599,12 +601,12 @@ i > img {
 	gap: 10px;
 	align-items: center;
 }
-.about-absolute p {
+.about-mini .about-absolute p {
 	flex: 2;
 	font-weight: 700;
 	font-size: 35px;
 }
-.about-absolute div span {
+.about-mini .about-absolute div span {
 	text-align: right;
 	flex: 1.5;
 	font-size: 25px;
@@ -655,7 +657,7 @@ i > img {
 	animation: moving2 15s linear infinite;
 }
 .create {
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 .create .main-text a:hover {
 	transition: all 0.3s linear;
@@ -826,14 +828,6 @@ i > img {
 	font-family: helvetica;
 }
 .about .about-desc p:last-child {
-	margin-top: 30px;
-}
-.about .about-desc2 {
-	margin: 50px 2% 0 30%;
-	width: 30%;
-	font-size: 22px;
-}
-.about .about-desc2 p:last-child {
 	margin-top: 30px;
 }
 .about-arrow-container {
@@ -1133,17 +1127,10 @@ i > img {
 	justify-content: center;
 	align-items: center;
 }
-.form .submit-message {
-	color: yellow;
-	font-size: 20px;
-	font-family: helvetica;
-	justify-content: center;
-	width: 100%;
-	margin-bottom: 20px;
-}
 .submit-page {
-	font-family: ilyas;
-	font-size: 5rem;
+	font-family: camar;
+	letter-spacing: 3px;
+	font-size: 3.5rem;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -1152,16 +1139,18 @@ i > img {
 	text-align: center;
 	height: 100vh;
 	text-transform: uppercase;
+	width: 80%;
+	margin: auto;
 }
 .submit-page a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	text-transform: initial;
-	color: blue;
-	text-decoration: underline;
+	letter-spacing: normal;
 }
-.submit-page a:hover {
-	color: yellow;
+.submit-page button{
+	width: 8vw;
+	height: 8vw;
 }
 /* contact end */
 .error {
@@ -1307,23 +1296,23 @@ i > img {
 	.projects-grid div p {
 		font-size: 1rem;
 	}
-	.about-text {
+	.about-mini .about-text {
 		font-size: 20px;
 	}
-	.about-img-container p {
+	.about-mini .about-img-container p {
 		font-size: 14px;
 	}
-	.about-absolute {
+	.about-mini .about-absolute {
 		padding-top: 5px;
 	}
-	.about-absolute div {
+	.about-mini .about-absolute div {
 		padding: 40px 0;
 	}
-	.about-absolute p {
+	.about-mini .about-absolute p {
 		font-weight: 700;
 		font-size: 15px;
 	}
-	.about-absolute div span {
+	.about-mini .about-absolute div span {
 		font-size: 12px;
 	}
 	.moving {
@@ -1331,6 +1320,9 @@ i > img {
 	}
 	.create img {
 		width: 80px;
+	}
+	.about .skills .skills-content {
+		margin-left: 5%;
 	}
 	.time {
 		font-size: 50px;
@@ -1350,9 +1342,6 @@ i > img {
 	}
 	.about .about-desc {
 		font-size: 25px;
-	}
-	.about .about-desc2 {
-		font-size: 18px;
 	}
 	.headers .main-text,
 	.create .main-text {
@@ -1708,14 +1697,10 @@ i > img {
 			text-align: left;
 			padding-left: 25%;
 		}
-		.about .about-desc,
-		.about .about-desc2 {
+		.about .about-desc {
 			margin: 20px 0 0 0;
 			width: 100%;
 			font-size: 23px;
-		}
-		.about .about-desc2 {
-			font-size: 16px;
 		}
 		.about-arrow-container {
 			margin: 50px 0 50px 10px;

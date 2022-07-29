@@ -1,9 +1,11 @@
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import Socials from './Socials';
 import resume from '../assets/Resume.pdf';
+import { useEffect } from 'react';
 
 const Navbar = () => {
 	const { pathname } = useLocation();
+	const navigate = useNavigate();
 	const width = window.innerWidth;
 	const handleHamburger = () => {
 		let navlinks = document.querySelector('.navlinks');
@@ -123,7 +125,19 @@ const Navbar = () => {
 		hamburgerClose.style.display = 'none';
 		window.scrollTo(0, 1000);
 		if (pathname === '/home') project.classList.add('project-animate');
-
+		else if (pathname !== '/home') {
+			navigate(`/home`);
+			setTimeout(() => {
+				if (width > 1000) window.scrollTo(0, 1000);
+			}, 500);
+			setTimeout(() => {
+				let project = document.querySelector('.projects-props');
+				if (width <= 1000) {
+					window.scrollTo(0, 370);
+					project.classList.add('project-animate');
+				}
+			}, 1);
+		}
 		if (width <= 1000) {
 			let navasideh1 = document.querySelector('.socials-hi-main');
 			let navlinks = document.querySelector('.navlinks');
@@ -136,14 +150,20 @@ const Navbar = () => {
 	};
 	window.onscroll = () => {
 		let project = document.querySelector('.projects-props');
-		if (window.scrollY === 0 && pathname === '/home')
+		if (
+			(window.scrollY >= 2000 || window.scrollY <= 100) &&
+			pathname === '/home'
+		)
 			project.classList.remove('project-animate');
 	};
-	// window.onresize = () => {
-	// 	if (width > 900) {
-	// 		window.location.reload();
-	// 	}
-	// };
+	useEffect(() => {
+		const arrow = document.querySelectorAll('.arrow');
+		arrow.forEach((a) => {
+			document.body.style.backgroundColor === 'rgb(255, 255, 255)' &&
+				a.classList.add('arrowlight');
+		});
+	}, [pathname]);
+
 	return (
 		<nav>
 			<div className="nav-header">

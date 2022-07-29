@@ -30,7 +30,7 @@ const Form = () => {
 			<input
 				type="hidden"
 				name="_next"
-				value={`https://geekycoder25.github.io/Qoreebullah-Portfolio/#/submit`}
+				value={`https://qoreeb.vercel.app/submit`}
 			/>
 			<input
 				type="hidden"

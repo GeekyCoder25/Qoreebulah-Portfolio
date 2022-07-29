@@ -19,7 +19,7 @@ const About = () => {
 			<Navbar />
 			<article className="about">
 				<main>
-					<div className="main" data-aos="fade-left">
+					<div className="main">
 						<p className="no">05</p>
 						<p className="main-text">About Me</p>
 						<div className="scroll-container">

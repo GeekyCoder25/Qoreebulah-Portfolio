@@ -82,7 +82,6 @@ const Mode = () => {
 		nav.style.backgroundColor = document.body.style.backgroundColor;
 		arrow.forEach((a) => {
 			a.classList.remove('arrowlight');
-			// console.log(a);
 		});
 	};
 
