@@ -33,6 +33,7 @@ function App() {
 					<Route path="/" element={<Firstpage />} />
 					<Route path="/loading" element={<Loading />} />
 					<Route path="/home" element={<Home />} />
+					<Route path="/home/:1" element={<Home />} />
 					{/* <Route path="/works" element={<Works />} /> */}
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />

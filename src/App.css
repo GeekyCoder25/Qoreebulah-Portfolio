@@ -1163,22 +1163,27 @@ i > img {
 	max-width: 400px;
 	max-height: 400px;
 	border-radius: 50%;
-	margin: 0% auto 5%;
+	margin: 0% auto 3%;
 }
 .error h1 {
 	letter-spacing: 5px;
-	font-size: 10vw;
-	font-family: ilyas;
+	font-size: 5vw;
+	font-family: camar;
 	text-transform: uppercase;
+}
+.error h1 span {
+	font-family: ilyas;
+	color: transparent;
+	-webkit-text-stroke-color: var(--darkmodestrokecolor);
+	-webkit-text-stroke-width: 0.2px;
 }
 .error a {
 	text-decoration: underline;
-	color: blue;
+	color: yellow;
 }
 .error a:hover {
 	display: inline-block;
 	transform: scale(1.1);
-	color: yellow;
 }
 @keyframes moving {
 	0% {
@@ -1850,8 +1855,12 @@ i > img {
 			width: 40vw;
 			height: 40vw;
 		}
+		.error h1 {
+			letter-spacing: 2px;
+			font-size: 10vw;
+		}
 		.error a {
-			padding-bottom: 30%;
+			padding: 5% 0;
 		}
 		/* error mobile end */
 	}

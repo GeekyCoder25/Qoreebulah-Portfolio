@@ -124,8 +124,18 @@ const Navbar = () => {
 		hamburger.style.display = 'block';
 		hamburgerClose.style.display = 'none';
 		window.scrollTo(0, 1000);
-		if (pathname === '/home') project.classList.add('project-animate');
-		else if (pathname !== '/home') {
+		if (pathname === '/home') {
+			setTimeout(() => {
+				window.scrollTo(0, 1000);
+				setTimeout(() => {
+					if (width < 1000) window.scrollTo(0, 370);
+				}, 1);
+			}, 1);
+			project.classList.add('project-animate');
+		} else if (pathname === '/home/:1') {
+			window.scrollTo(0, 1000);
+			project.classList.add('project-animate');
+		} else if (pathname !== '/home') {
 			navigate(`/home`);
 			setTimeout(() => {
 				if (width > 1000) window.scrollTo(0, 1000);
@@ -163,7 +173,15 @@ const Navbar = () => {
 				a.classList.add('arrowlight');
 		});
 	}, [pathname]);
-
+	const handleNameHeader = () => {
+		let navbar = document.querySelector('nav');
+		window.scrollTo(0, 0);
+		if (
+			navbar.classList.contains('hamburger-page') ||
+			navbar.classList.contains('nav-height')
+		)
+			handleHamburgerClose();
+	};
 	return (
 		<nav>
 			<div className="nav-header">
@@ -206,7 +224,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<Link to={'/home'}>
-					<h1>Qoreeb</h1>
+					<h1 onClick={handleNameHeader}>Qoreeb</h1>
 				</Link>
 			</div>
 			<div className="nav-content">
@@ -215,7 +233,7 @@ const Navbar = () => {
 						<NavLink to={`/home`}>Home</NavLink>
 					</li>
 					<li>
-						<Link to={'/home'} onClick={handleScroll}>
+						<Link to={'/home/1'} onClick={handleScroll}>
 							Works
 						</Link>
 					</li>
