@@ -1,8 +1,8 @@
 import {
-	BrowserRouter as Router,
+	// BrowserRounpter as Router,
 	Routes,
 	Route,
-	// HashRouter,
+	HashRouter,
 } from 'react-router-dom';
 import './App.css';
 // import './fontawesome-free-6.1.1-web/css/all.css';
@@ -27,7 +27,7 @@ AOS.init({
 function App() {
 	return (
 		<div className="App">
-			<Router>
+			<HashRouter>
 				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Firstpage />} />
@@ -39,7 +39,7 @@ function App() {
 					<Route path="/submit" element={<Submit />} />
 					<Route path="*" element={<Error />} />
 				</Routes>
-			</Router>
+			</HashRouter>
 			<Mode />
 		</div>
 	);

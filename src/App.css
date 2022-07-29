@@ -1148,7 +1148,7 @@ i > img {
 	text-transform: initial;
 	letter-spacing: normal;
 }
-.submit-page button{
+.submit-page button {
 	width: 8vw;
 	height: 8vw;
 }
@@ -1575,29 +1575,29 @@ i > img {
 		.socials-hi h4 {
 			margin: 30px 0;
 		}
-		.about-absolute-container,
-		.about-text {
+		.about-mini .about-absolute-container,
+		.about-mini .about-text {
 			width: 100%;
 			padding-left: 0;
 			line-height: 30px;
 		}
-		.about-img-container {
+		.about-mini .about-img-container {
 			display: flex;
 			flex-direction: column;
 			margin-bottom: 0;
 		}
-		.about-img-container img {
+		.about-mini .about-img-container img {
 			width: 100%;
 			height: 100%;
 		}
-		.about-img-container div {
+		.about-mini .about-img-container div {
 			order: -1;
 		}
-		.about-absolute {
+		.about-mini .about-absolute {
 			position: initial;
 			margin-top: 0;
 		}
-		.about-moving h1 {
+		.about-mini .about-moving h1 {
 			font-size: 60px;
 		}
 		.work-with-container {
@@ -1835,9 +1835,13 @@ i > img {
 			margin-top: 30px;
 		}
 		.submit-page {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			width: 90%;
 			margin: auto;
+		}
+		.submit-page button {
+			width: 32vw;
+			height: 32vw;
 		}
 		/* contact mobile end */
 		/* error mobile */
