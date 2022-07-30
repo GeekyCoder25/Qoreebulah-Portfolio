@@ -47,6 +47,7 @@ const Mode = () => {
 			a.classList.add('arrowlight');
 		});
 	};
+
 	const handleDarkMode = () => {
 		const nav = document.querySelector('nav');
 		const arrow = document.querySelectorAll('.arrow');

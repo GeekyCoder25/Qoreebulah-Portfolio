@@ -16,10 +16,7 @@ const Navbar = () => {
 		let hamburgerClose = document.querySelector('.hamburger-close');
 		let first = document.querySelector('.first-child');
 		let navcontent = document.querySelector('.nav-content');
-		let active = document.querySelector('.active');
-
 		navbar.style.backgroundColor = document.body.style.backgroundColor;
-		active.classList.add('active-hamburger');
 		if (width > 1000) {
 			navbar.classList.add('hamburger-page');
 			for (let i = 0; i < navlinks.children.length; i++) {
@@ -63,7 +60,6 @@ const Navbar = () => {
 		let hamburgerClose = document.querySelector('.hamburger-close');
 		let first = document.querySelector('.first-child');
 		let navcontent = document.querySelector('.nav-content');
-		let active = document.querySelector('.active');
 
 		hamburger.style.display = 'block';
 		hamburgerClose.style.display = 'none';
@@ -80,7 +76,6 @@ const Navbar = () => {
 			}
 			navaside.classList.remove('hamburger-page-nav-aside');
 			navcontent.classList.add('nav-content-active');
-			active.classList.remove('active-hamburger');
 		} else {
 			navasideh1.style.display = 'none';
 			navlinks.style.display = 'none';
@@ -124,17 +119,14 @@ const Navbar = () => {
 		hamburger.style.display = 'block';
 		hamburgerClose.style.display = 'none';
 		window.scrollTo(0, 1000);
-		if (pathname === '/home') {
+		if (pathname === '/home' || pathname === '/home/1') {
 			setTimeout(() => {
 				window.scrollTo(0, 1000);
 				setTimeout(() => {
 					if (width < 1000) window.scrollTo(0, 370);
 				}, 1);
+				project.classList.add('project-animate');
 			}, 1);
-			project.classList.add('project-animate');
-		} else if (pathname === '/home/:1') {
-			window.scrollTo(0, 1000);
-			project.classList.add('project-animate');
 		} else if (pathname !== '/home') {
 			navigate(`/home`);
 			setTimeout(() => {
@@ -160,11 +152,22 @@ const Navbar = () => {
 	};
 	window.onscroll = () => {
 		let project = document.querySelector('.projects-props');
+		let works = document.querySelector('.works-link');
 		if (
 			(window.scrollY >= 2000 || window.scrollY <= 100) &&
-			pathname === '/home'
-		)
+			(pathname === '/home' || pathname === '/home/1')
+		) {
 			project.classList.remove('project-animate');
+		}
+		if (
+			window.scrollY >= 1000 &&
+			window.scrollY <= 6000 &&
+			(pathname === '/home' || pathname === '/home/1')
+		) {
+			works.classList.add('active');
+		} else {
+			works.classList.remove('active');
+		}
 	};
 	useEffect(() => {
 		const arrow = document.querySelectorAll('.arrow');
@@ -233,7 +236,7 @@ const Navbar = () => {
 						<NavLink to={`/home`}>Home</NavLink>
 					</li>
 					<li>
-						<Link to={'/home/1'} onClick={handleScroll}>
+						<Link className="works-link" to={'/home/1'} onClick={handleScroll}>
 							Works
 						</Link>
 					</li>
