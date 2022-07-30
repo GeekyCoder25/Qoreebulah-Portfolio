@@ -82,92 +82,50 @@ const Navbar = () => {
 			navbar.classList.remove('nav-height');
 		}
 	};
-	document.body.addEventListener('click', () => {
-		let navbar = document.querySelector('nav');
-		navbar.style.backgroundColor = document.body.style.backgroundColor;
-	});
+	// document.body.addEventListener('load', () => {
+	// 	let navbar = document.querySelector('nav');
+	// 	navbar.style.backgroundColor = document.body.style.backgroundColor;
+	// });
 	const handleScroll = () => {
-		let navlinks = document.querySelector('.navlinks');
-		for (let i = 0; i < navlinks.children.length; i++) {
-			navlinks.children[i].onmouseover = () => {
-				navlinks.children[i].classList.remove('active-hamburger');
-			};
-		}
 		let project = document.querySelector('.projects-props');
-		let navaside = document.querySelector('.nav-aside');
 		let navbar = document.querySelector('nav');
-		let hamburger = document.querySelector('.hamburger');
-		let hamburgerClose = document.querySelector('.hamburger-close');
-		let first = document.querySelector('.first-child');
-		let navcontent = document.querySelector('.nav-content');
-		let active = document.querySelector('.active');
-		if (navbar.classList.contains('hamburger-page')) {
-			navbar.classList.remove('hamburger-page');
-			navlinks.style.display = 'flex';
-			navlinks.style.marginLeft = 'auto';
-			navlinks.classList.remove('hamburger-page-navlinks');
-			first.style.display = 'none';
-			for (let i = 0; i < navlinks.children.length; i++) {
-				navlinks.children[i].classList.remove(
-					'hamburger-page-navlinks-children'
-				);
-			}
-			navaside.style.display = 'none';
-			navcontent.classList.add('nav-content-active');
-			active.classList.remove('active-hamburger');
+		if (
+			navbar.classList.contains('hamburger-page') ||
+			navbar.classList.contains('nav-height')
+		) {
+			handleHamburgerClose();
+			window.scrollTo(0, 1000);
 		}
-		hamburger.style.display = 'block';
-		hamburgerClose.style.display = 'none';
-		window.scrollTo(0, 1000);
 		if (pathname === '/home' || pathname === '/home/1') {
 			setTimeout(() => {
 				window.scrollTo(0, 1000);
-				setTimeout(() => {
-					if (width < 1000) window.scrollTo(0, 370);
-				}, 1);
 				project.classList.add('project-animate');
+				if (width <= 1000) window.scrollTo(0, 370);
 			}, 1);
 		} else if (pathname !== '/home') {
 			navigate(`/home`);
 			setTimeout(() => {
-				if (width > 1000) window.scrollTo(0, 1000);
-			}, 500);
-			setTimeout(() => {
-				let project = document.querySelector('.projects-props');
 				if (width <= 1000) {
 					window.scrollTo(0, 370);
-					project.classList.add('project-animate');
-				}
+				} else window.scrollTo(0, 1000);
 			}, 1);
-		}
-		if (width <= 1000) {
-			let navasideh1 = document.querySelector('.socials-hi-main');
-			let navlinks = document.querySelector('.navlinks');
-			let navbar = document.querySelector('nav');
-			navasideh1.style.display = 'none';
-			navlinks.style.display = 'none';
-			navbar.classList.remove('nav-height');
-			window.scrollTo(0, 370);
 		}
 	};
 	window.onscroll = () => {
 		let project = document.querySelector('.projects-props');
 		let works = document.querySelector('.works-link');
 		if (
-			(window.scrollY >= 2000 || window.scrollY <= 100) &&
-			(pathname === '/home' || pathname === '/home/1')
-		) {
+			(pathname === '/home' || pathname === '/home/1') &&
+			(window.scrollY < 100 || window.scrollY > 1500)
+		)
 			project.classList.remove('project-animate');
-		}
 		if (
-			window.scrollY >= 1000 &&
-			window.scrollY <= 6000 &&
-			(pathname === '/home' || pathname === '/home/1')
-		) {
+			(pathname === '/home' || pathname === '/home/1') &&
+			window.scrollY > 1000 &&
+			window.scrollY < 6000
+		)
 			works.classList.add('active');
-		} else {
-			works.classList.remove('active');
-		}
+		else works.classList.remove('active');
 	};
 	useEffect(() => {
 		const arrow = document.querySelectorAll('.arrow');
