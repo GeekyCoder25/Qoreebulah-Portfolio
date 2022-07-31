@@ -5,7 +5,7 @@ import {
 	// HashRouter
 } from 'react-router-dom';
 import './App.css';
-// import './fontawesome-free-6.1.1-web/css/all.css';
+import './fontawesome-free-6.1.1-web/css/all.css';
 import ScrollToTop from './Components/ScrollToTop';
 import Home, { Mode } from './Components/Home';
 import Loading from './Components/Loading';
@@ -22,6 +22,7 @@ AOS.init({
 	offset: 150, // offset (in px) from the original trigger point
 	delay: 0, // values from 0 to 3000, with step 50ms
 	duration: 1000, // values from 0 to 3000, with step 50ms
+	once: true, // whether animation should happen only once - while scrolling down
 });
 
 function App() {
