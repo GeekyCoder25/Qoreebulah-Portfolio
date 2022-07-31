@@ -5,7 +5,7 @@ import {
 	// HashRouter
 } from 'react-router-dom';
 import './App.css';
-import './fontawesome-free-6.1.1-web/css/all.css';
+// import './fontawesome-free-6.1.1-web/css/all.css';
 import ScrollToTop from './Components/ScrollToTop';
 import Home, { Mode } from './Components/Home';
 import Loading from './Components/Loading';
