@@ -6,19 +6,34 @@ const Form = () => {
 
 	const handleName = (e) => {
 		e.target.value === ''
-			? setNamevalid('Please input your name')
+			? setNamevalid(
+					<>
+						<i class="fa-solid fa-circle-exclamation"></i>
+						<span> Please input your name</span>
+					</>
+			  )
 			: setNamevalid(true);
 	};
 	const handleEmail = (e) => {
 		e.target.value.length < 6 ||
 		!e.target.value.includes('@') ||
 		!e.target.value.includes('.')
-			? setEmailvalid('Please input a valid email')
+			? setEmailvalid(
+					<>
+						<i class="fa-solid fa-circle-exclamation"></i>
+						<span> Please input a valid email</span>
+					</>
+			  )
 			: setEmailvalid(true);
 	};
 	const handleMessage = (e) => {
 		e.target.value === ''
-			? setMessagevalid('Please include a message')
+			? setMessagevalid(
+					<>
+						<i class="fa-solid fa-circle-exclamation"></i>
+						<span> Please include a message</span>
+					</>
+			  )
 			: setMessagevalid(true);
 	};
 	return (
@@ -57,7 +72,12 @@ const Form = () => {
 						onInvalid={(e) => {
 							e.preventDefault();
 							if (!namevalid) {
-								setNamevalid('Please input your name');
+								setNamevalid(
+									<>
+										<i class="fa-solid fa-circle-exclamation"></i>
+										<span> Please input your name</span>
+									</>
+								);
 							}
 						}}
 					/>
@@ -79,7 +99,12 @@ const Form = () => {
 						onInvalid={(e) => {
 							e.preventDefault();
 							if (!emailvalid) {
-								setEmailvalid('Please input a valid email');
+								setEmailvalid(
+									<>
+										<i class="fa-solid fa-circle-exclamation"></i>
+										<span> Please input a valid email</span>
+									</>
+								);
 							}
 						}}
 					/>
@@ -102,7 +127,12 @@ const Form = () => {
 						onInvalid={(e) => {
 							e.preventDefault();
 							if (!messagevalid) {
-								setMessagevalid('Please include a message');
+								setMessagevalid(
+									<>
+										<i class="fa-solid fa-circle-exclamation"></i>
+										<span> Please include a message</span>
+									</>
+								);
 							}
 						}}
 					></textarea>
