@@ -10,7 +10,7 @@
 
 # production
 /build
-/src/fontawesome-free-6.1.1-web
+# /src/fontawesome-free-6.1.1-web
 # misc
 .DS_Store
 .env.local
