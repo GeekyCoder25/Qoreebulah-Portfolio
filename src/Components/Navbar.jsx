@@ -1,6 +1,5 @@
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import Socials from './Socials';
-import resume from '../assets/Resume.pdf';
 import { useEffect } from 'react';
 
 const Navbar = () => {
@@ -129,7 +128,7 @@ const Navbar = () => {
 	};
 	useEffect(() => {
 		const arrow = document.querySelectorAll('.arrow');
-		arrow.forEach((a) => {
+		arrow.forEach(a => {
 			document.body.style.backgroundColor === 'rgb(255, 255, 255)' &&
 				a.classList.add('arrowlight');
 		});
@@ -199,7 +198,11 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li>
-						<a href={resume} download="Qoreeb's Resume">
+						<a
+							href="https://drive.google.com/file/d/15d7IjSBjH2SOC1vJPvDJsydvLa92ZrGa/view"
+							target="_blank"
+							rel="noreferrer"
+						>
 							Resume
 						</a>
 					</li>

@@ -4,7 +4,7 @@ const Form = () => {
 	const [emailvalid, setEmailvalid] = useState('');
 	const [messagevalid, setMessagevalid] = useState('');
 
-	const handleName = (e) => {
+	const handleName = e => {
 		e.target.value === ''
 			? setNamevalid(
 					<>
@@ -14,7 +14,7 @@ const Form = () => {
 			  )
 			: setNamevalid(true);
 	};
-	const handleEmail = (e) => {
+	const handleEmail = e => {
 		e.target.value.length < 6 ||
 		!e.target.value.includes('@') ||
 		!e.target.value.includes('.')
@@ -26,7 +26,7 @@ const Form = () => {
 			  )
 			: setEmailvalid(true);
 	};
-	const handleMessage = (e) => {
+	const handleMessage = e => {
 		e.target.value === ''
 			? setMessagevalid(
 					<>
@@ -35,6 +35,7 @@ const Form = () => {
 					</>
 			  )
 			: setMessagevalid(true);
+
 	};
 	return (
 		<form
@@ -69,7 +70,7 @@ const Form = () => {
 						placeholder="Enter your name here"
 						onBlur={handleName}
 						required
-						onInvalid={(e) => {
+						onInvalid={e => {
 							e.preventDefault();
 							if (!namevalid) {
 								setNamevalid(
@@ -96,7 +97,7 @@ const Form = () => {
 						placeholder="Enter your email here"
 						required
 						onBlur={handleEmail}
-						onInvalid={(e) => {
+						onInvalid={e => {
 							e.preventDefault();
 							if (!emailvalid) {
 								setEmailvalid(
@@ -104,6 +105,7 @@ const Form = () => {
 										<i class="fa-solid fa-circle-exclamation"></i>
 										<span> Please input a valid email</span>
 									</>
+									
 								);
 							}
 						}}
@@ -124,7 +126,7 @@ const Form = () => {
 						placeholder="Enter your product details"
 						required
 						onBlur={handleMessage}
-						onInvalid={(e) => {
+						onInvalid={e => {
 							e.preventDefault();
 							if (!messagevalid) {
 								setMessagevalid(

@@ -1,13 +1,13 @@
 import arrow from '../images/Vector 1.png';
 
-const ProjectGrid = (props) => {
+const ProjectGrid = props => {
 	return (
 		<div className="projects-grid-container">
 			<section className="projects-grid">
 				<a href={`${props.link1}`} target="_blank" rel="noreferrer">
 					<div className="I4G projects-grid-sub">
 						<h1 className="imgheader">{props.heading1}</h1>
-						<img src={props.image1} alt="14G" />
+						<img src={props.image1} alt="item7" />
 						<p>
 							<span className="grid-src">
 								{props.about1}
@@ -33,15 +33,22 @@ const ProjectGrid = (props) => {
 					</div>
 				</a>
 				<i className="arrow-down projects-grid-sub">
+					<span>
+						People ignore design <br /> that ignores people.
+					</span>
 					<img src={arrow} alt="arrow" className="arrow arrow-down-img" />
 				</i>
 				<i className="arrow-down-right projects-grid-sub">
+					<span>
+						Do not seek praise, <br />
+						seek criticism{' '}
+					</span>
 					<img src={arrow} alt="arrow" className="arrow arrow-down-img" />
 				</i>
 				<a href={`${props.link3}`} target="_blank" rel="noreferrer">
 					<div className="nft projects-grid-sub" data-aos="fade-right">
 						<h1 className="imgheader">{props.heading3}</h1>
-						<img src={props.image3} alt="14G" />
+						<img src={props.image3} alt="item7" />
 						<p>
 							<span className="grid-src">
 								{props.about3}
@@ -69,7 +76,7 @@ const ProjectGrid = (props) => {
 				<a href={`${props.link5}`} target="_blank" rel="noreferrer">
 					<div className="car projects-grid-sub" data-aos="fade-left">
 						<h1 className="imgheader">{props.heading5}</h1>
-						<img src={props.image5} alt="14G" />
+						<img src={props.image5} alt="item7" />
 						<p>
 							<span className="grid-src">
 								{props.about5}
@@ -81,6 +88,10 @@ const ProjectGrid = (props) => {
 					</div>
 				</a>
 				<i className="arrow-bottom">
+					<span>
+						While great art makes you <br /> wonder, great design <br /> makes
+						things clear
+					</span>
 					<img src={arrow} alt="arrow" className="arrow arrow-down-img" />
 				</i>
 				<a href={`${props.link6}`} target="_blank" rel="noreferrer">

@@ -28,7 +28,7 @@ const Mode = () => {
 		);
 		document.documentElement.style.setProperty(
 			'--darkmodegridimagebgcolor',
-			'#151515'
+			'#efefef'
 		);
 		document.documentElement.style.setProperty(
 			'--darkmodeoppbackcolor',
@@ -41,7 +41,7 @@ const Mode = () => {
 		document.documentElement.style.setProperty('--circlebordercolor', 'black');
 		light[0].style.display = 'none';
 		dark[0].style.display = 'block';
-		document.body.style.backgroundColor = '#fff';
+		document.body.style.backgroundColor = '#fafafa';
 		nav.style.backgroundColor = document.body.style.backgroundColor;
 		arrow.forEach((a) => {
 			a.classList.add('arrowlight');

@@ -1,6 +1,6 @@
 import Headers from './Headers';
 import ProjectGrid from './ProjectGrid';
-import IFG from '../images/14G.png';
+import IFG from '../images/item7.png';
 import Magverse from '../images/Magverse.png';
 import NFT from '../images/NFT.png';
 import Restaurant from '../images/Restaurant.png';
@@ -11,7 +11,7 @@ const Projects = () => {
 		<section className="projects-props" >
 			<Headers no={'02'} text={'recent projects'} />
 			<ProjectGrid
-				link1={'https://www.behance.net/gallery/140665139/I4G-landing-page'}
+				link1={'https://www.behance.net/gallery/150600619/ITEM7-FOOD-ORDERING-APP-CASE-STUDY'}
 				link2={
 					'https://www.behance.net/gallery/141034043/MetaVerse-Landing-Page'
 				}
@@ -29,25 +29,25 @@ const Projects = () => {
 				image4={Restaurant}
 				image5={Car}
 				image6={ELearn}
-				heading1={'14G'}
+				heading1={'Item 7'}
 				heading2={'Magverse'}
 				heading3={'NFT'}
 				heading4={'Restaurant'}
 				heading5={'Car Park'}
 				heading6={'E-Learn'}
-				about1={'14G Website'}
+				about1={'Item 7 Food Ordering App'}
 				about2={'Magverse Website'}
 				about3={'Magnificient NFT'}
 				about4={"Folk's Food Website"}
 				about5={'Parking App'}
 				about6={'E-learning Website'}
-				source1={'Landing page'}
+				source1={'Case Study'}
 				source2={'Landing Page'}
 				source3={'Landing page'}
 				source4={'Landing page'}
 				source5={'Mobile App'}
 				source6={'Landing page'}
-				year1={'2021'}
+				year1={'2022'}
 				year2={'2022'}
 				year3={'2022'}
 				year4={'2021'}

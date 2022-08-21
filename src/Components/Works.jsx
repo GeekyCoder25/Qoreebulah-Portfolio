@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import ProjectGrid from './ProjectGrid';
-import IFG from '../images/14G.png';
+import IFG from '../images/item7.png';
 import Magverse from '../images/Magverse.png';
 import NFT from '../images/NFT.png';
 import Restaurant from '../images/Restaurant.png';

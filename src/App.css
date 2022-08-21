@@ -535,6 +535,38 @@ i > img {
 }
 .projects-grid .arrow-down {
 	margin-top: auto;
+	transition: all 2.5s ease;
+}
+.projects-grid i span {
+	display: flex;
+	border-radius: 50%;
+	background-color: #fafafa;
+	display: none;
+}
+.projects-grid i:hover img {
+	display: none;
+}
+.projects-grid i:hover span {
+	animation: arrow-hover 0.5s ease forwards;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	white-space: nowrap;
+	text-align: center;
+}
+@keyframes arrow-hover {
+	from {
+		font-size: .5rem;
+		width: 0;
+		display: block;
+		height: 0;
+	}
+	to {
+		font-size: 1.5rem;
+		height: 100%;
+		width: 100%;
+	}
 }
 .projects-grid .arrow-bottom {
 	margin-top: auto;

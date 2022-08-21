@@ -35,20 +35,25 @@ const About = () => {
 					</div>
 					<div className="about-desc" data-aos="fade-right">
 						<p>
-							I love Design, Art, and Technology. I'm a Product designer
-							specialized in creating seamless user experiences and digital user
-							interfaces. In my professional career, I have always gravitated
-							towards the technology industry because of its ability to have a
-							positive impact at scale. Through my experience, I've discovered
-							that I am most fulfilled collaborating with partners to develop
-							elegant solutions to complex problems.
+							Hi, I'm Abubakar Qoreebullah, a product designer, passionate about
+							the usage of my skills on initiating frictionless user interfaces
+							that ultimately enhance the overall experience of the end users.
+							My attraction to creativity and my dexterity in graphics help me
+							create projects that capture users' attention and provide
+							practical solutions to their needs.
+						</p>
+						<p style={{marginTop: '50px'}}>
+							To strengthen my impact on the daily lives of internet users and
+							broaden my reach, I have always made the technology industry my
+							main focus. Coming up with effective solutions to mind-boggling
+							issues within a short period is one of my strong suits. This makes
+							me seamlessly fit into teams, and I'm always willing to partner
+							with organizations that prioritize user experience.
 						</p>
 						<p>
-							With a background in graphic design, I'm particularly drawn to
-							projects that require a high degree of craft, vision, and design
-							thinking. In my personal endeavours, I seek out volunteer
-							opportunities to use storytelling and advocacy as a method to aid
-							underserved communities and create a more sustainable future.
+							I have engaged in free volunteering projects that employ artistic
+							designs to narrate the stories of low-income communities and their
+							pressing issues while helping them build a greener future.
 						</p>
 					</div>
 					<div className="about-arrow-container" data-aos="fade-left">
