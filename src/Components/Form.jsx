@@ -8,7 +8,7 @@ const Form = () => {
 		e.target.value === ''
 			? setNamevalid(
 					<>
-						<i class="fa-solid fa-circle-exclamation"></i>
+						<i className="fa-solid fa-circle-exclamation"></i>
 						<span> Please input your name</span>
 					</>
 			  )
@@ -20,7 +20,7 @@ const Form = () => {
 		!e.target.value.includes('.')
 			? setEmailvalid(
 					<>
-						<i class="fa-solid fa-circle-exclamation"></i>
+						<i className="fa-solid fa-circle-exclamation"></i>
 						<span> Please input a valid email</span>
 					</>
 			  )
@@ -30,12 +30,11 @@ const Form = () => {
 		e.target.value === ''
 			? setMessagevalid(
 					<>
-						<i class="fa-solid fa-circle-exclamation"></i>
+						<i className="fa-solid fa-circle-exclamation"></i>
 						<span> Please include a message</span>
 					</>
 			  )
 			: setMessagevalid(true);
-
 	};
 	return (
 		<form
@@ -45,8 +44,13 @@ const Form = () => {
 		>
 			<input
 				type="hidden"
+				name="_cc"
+				value="https://formsubmit.co/qoribullahabubakar@gmail.com"
+			/>
+			<input
+				type="hidden"
 				name="_next"
-				value={`https://qoreeb.vercel.app/submit`}
+				value="https://qoreeb.vercel.app/submit"
 			/>
 			<input
 				type="hidden"
@@ -75,7 +79,7 @@ const Form = () => {
 							if (!namevalid) {
 								setNamevalid(
 									<>
-										<i class="fa-solid fa-circle-exclamation"></i>
+										<i className="fa-solid fa-circle-exclamation"></i>
 										<span> Please input your name</span>
 									</>
 								);
@@ -102,10 +106,9 @@ const Form = () => {
 							if (!emailvalid) {
 								setEmailvalid(
 									<>
-										<i class="fa-solid fa-circle-exclamation"></i>
+										<i className="fa-solid fa-circle-exclamation"></i>
 										<span> Please input a valid email</span>
 									</>
-									
 								);
 							}
 						}}
@@ -131,7 +134,7 @@ const Form = () => {
 							if (!messagevalid) {
 								setMessagevalid(
 									<>
-										<i class="fa-solid fa-circle-exclamation"></i>
+										<i className="fa-solid fa-circle-exclamation"></i>
 										<span> Please include a message</span>
 									</>
 								);

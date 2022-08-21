@@ -481,11 +481,11 @@ main section {
 	width: 100%;
 	height: auto;
 }
-.projects-grid .I4G img {
+.projects-grid .item7 img {
 	height: 60%;
-	animation: i4g 1s ease;
+	animation: item7 1s ease;
 }
-@keyframes i4g {
+@keyframes item7 {
 	from {
 		transform: translateX(-100vw);
 	}
@@ -1606,8 +1606,8 @@ i > img {
 		}
 		.all button {
 			font-size: 16px;
-			width: 30vw;
-			height: 30vw;
+			width: 32vw;
+			height: 32vw;
 			margin-bottom: 20px;
 			color: #fff;
 		}

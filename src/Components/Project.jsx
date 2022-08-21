@@ -1,6 +1,6 @@
 import Headers from './Headers';
 import ProjectGrid from './ProjectGrid';
-import IFG from '../images/item7.png';
+import Item7 from '../images/item7.png';
 import Magverse from '../images/Magverse.png';
 import NFT from '../images/NFT.png';
 import Restaurant from '../images/Restaurant.png';
@@ -23,7 +23,7 @@ const Projects = () => {
 				link6={
 					'https://www.behance.net/gallery/140663029/E-learning-landing-page'
 				}
-				image1={IFG}
+				image1={Item7}
 				image2={Magverse}
 				image3={NFT}
 				image4={Restaurant}

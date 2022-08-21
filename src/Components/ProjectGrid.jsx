@@ -1,11 +1,11 @@
-import arrow from '../images/Vector 1.png';
+import arrow from '../images/Vector1.png';
 
 const ProjectGrid = props => {
 	return (
 		<div className="projects-grid-container">
 			<section className="projects-grid">
 				<a href={`${props.link1}`} target="_blank" rel="noreferrer">
-					<div className="I4G projects-grid-sub">
+					<div className="item7 projects-grid-sub">
 						<h1 className="imgheader">{props.heading1}</h1>
 						<img src={props.image1} alt="item7" />
 						<p>

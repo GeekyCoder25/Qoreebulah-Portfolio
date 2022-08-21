@@ -1,14 +1,12 @@
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router";
-import ohayo from "../audio/Azu-nyan Ohayo.mp3";
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router';
+
 const Loading = () => {
 	const [countdown, setcountdown] = useState(0);
 	const navigate = useNavigate();
 
-	const now = document.querySelector(".now");
+	const now = document.querySelector('.now');
 	const loadingContent = document.querySelector('.loading');
-	const date = new Date();
-	const hour = date.getHours();
 	useEffect(() => {
 		const interval = setInterval(() => {
 			if (countdown < 100) {
@@ -30,12 +28,14 @@ const Loading = () => {
 		<article className="loading">
 			<h1>
 				<span className="countdown">
-					{countdown < 10 ? "0" + countdown : countdown}
+					{countdown < 10 ? '0' + countdown : countdown}
 					<span className="hyphen"> - </span>100
 				</span>
 				<span>YOUR</span> <br />
 				<span>WEB EXPERIENCE</span> <br />
-				<span>IS LOADING RIGHT <span className="now">NOW</span></span>
+				<span>
+					IS LOADING RIGHT <span className="now">NOW</span>
+				</span>
 			</h1>
 			<p>
 				Please wait <br /> a few seconds

@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import ProjectGrid from './ProjectGrid';
-import IFG from '../images/item7.png';
+import Item7 from '../images/item7.png';
 import Magverse from '../images/Magverse.png';
 import NFT from '../images/NFT.png';
 import Restaurant from '../images/Restaurant.png';
@@ -37,7 +37,9 @@ const Works = () => {
 				</div>
 			</main>
 			<ProjectGrid
-				link1={'https://www.behance.net/gallery/140665139/I4G-landing-page'}
+				link1={
+					'https://www.behance.net/gallery/150600619/ITEM7-FOOD-ORDERING-APP-CASE-STUDY'
+				}
 				link2={
 					'https://www.behance.net/gallery/141034043/MetaVerse-Landing-Page'
 				}
@@ -49,7 +51,7 @@ const Works = () => {
 				link6={
 					'https://www.behance.net/gallery/140663029/E-learning-landing-page'
 				}
-				image1={IFG}
+				image1={Item7}
 				image2={Magverse}
 				image3={NFT}
 				image4={Restaurant}
@@ -130,7 +132,7 @@ const Works = () => {
 };
 
 export default Works;
-const AboutMoving = (props) => {
+const AboutMoving = props => {
 	return (
 		<section className="about-moving-container">
 			<section className="about-moving">

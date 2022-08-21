@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import arrow from '../images/Vector 1.png';
+import arrow from '../images/Vector1.png';
 import { AboutMoving } from './Works';
 import Create from './Create';
 import Headers from './Headers';

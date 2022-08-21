@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import arrow from '../images/Vector 1.png';
+import arrow from '../images/Vector1.png';
 import Socials from './Socials';
 const Create = () => {
 	return (
