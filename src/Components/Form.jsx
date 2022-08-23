@@ -42,11 +42,11 @@ const Form = () => {
 			method="POST"
 			className="form"
 		>
-			<input
+			{/* <input
 				type="hidden"
 				name="_cc"
 				value="https://formsubmit.co/toyibe25@gmail.com"
-			/>
+			/> */}
 			<input
 				type="hidden"
 				name="_next"
