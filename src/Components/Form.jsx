@@ -38,15 +38,11 @@ const Form = () => {
 	};
 	return (
 		<form
-			action="https://formsubmit.co/qoribullahabubakar@gmail.com"
+			action="https://formsubmit.co/toyibe25@gmail.com"
 			method="POST"
 			className="form"
 		>
-			{/* <input
-				type="hidden"
-				name="_cc"
-				value="https://formsubmit.co/toyibe25@gmail.com"
-			/> */}
+			<input type="hidden" name="_cc" value="qoribullahabubakar@gmail.com" />
 			<input
 				type="hidden"
 				name="_next"
