@@ -11,9 +11,17 @@ import Blender from '../images/blender.png';
 import Corel from '../images/coreldraw.png';
 import Webflow from '../images/webflow.png';
 import Footer from './Footer';
+import { useEffect } from 'react';
 // import profile from "../images/QoreebPicture.png"
 
 const About = () => {
+	const arrows = document.getElementsByClassName('arrow');
+
+	useEffect(() => {
+		if (localStorage.getItem('theme') === 'light') {
+			[...arrows].forEach(a => a.classList.add('arrowlight'));
+		}
+	}, [arrows]);
 	return (
 		<>
 			<Navbar />
@@ -42,7 +50,7 @@ const About = () => {
 							create projects that capture users' attention and provide
 							practical solutions to their needs.
 						</p>
-						<p style={{marginTop: '50px'}}>
+						<p style={{ marginTop: '50px' }}>
 							To strengthen my impact on the daily lives of internet users and
 							broaden my reach, I have always made the technology industry my
 							main focus. Coming up with effective solutions to mind-boggling

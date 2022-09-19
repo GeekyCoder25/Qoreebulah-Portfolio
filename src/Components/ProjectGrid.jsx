@@ -33,13 +33,13 @@ const ProjectGrid = props => {
 					</div>
 				</a>
 				<i className="arrow-down projects-grid-sub">
-					<span>
+					<span className="arrowHover">
 						People ignore design <br /> that ignores people.
 					</span>
 					<img src={arrow} alt="arrow" className="arrow arrow-down-img" />
 				</i>
 				<i className="arrow-down-right projects-grid-sub">
-					<span>
+					<span className="arrowHover">
 						Do not seek praise, <br />
 						seek criticism{' '}
 					</span>
@@ -88,7 +88,7 @@ const ProjectGrid = props => {
 					</div>
 				</a>
 				<i className="arrow-bottom">
-					<span>
+					<span className="arrowHover">
 						While great art makes you <br /> wonder, great design <br /> makes
 						things clear
 					</span>

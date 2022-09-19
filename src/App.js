@@ -41,8 +41,8 @@ function App() {
 					<Route path="/submit" element={<Submit />} />
 					<Route path="*" element={<Error />} />
 				</Routes>
+				<Mode />
 			</Router>
-			<Mode />
 		</div>
 	);
 }

@@ -1,4 +1,5 @@
 // import japan_img from '../images/Mask group.jpg';
+import { useEffect } from 'react';
 import AboutMini from './AboutMini';
 import Create from './Create';
 import Footer from './Footer';
@@ -6,18 +7,20 @@ import Navbar from './Navbar';
 import Projects from './Project';
 import WorkWith from './WorkWith';
 
-const dark = document.getElementsByClassName('fa-moon');
-const light = document.getElementsByClassName('fa-circle-half-stroke');
-
 const Mode = () => {
 	const handleLightMode = () => {
+		const dark = document.getElementsByClassName('fa-moon');
+		const light = document.getElementsByClassName('fa-circle-half-stroke');
 		const nav = document.querySelector('nav');
 		const arrow = document.querySelectorAll('.arrow');
 		document.documentElement.style.setProperty(
 			'--darkmodecolor',
 			'--darkmodebackcolor'
 		);
-		document.documentElement.style.setProperty('--darkmodebackcolor', '#fff');
+		document.documentElement.style.setProperty(
+			'--darkmodebackcolor',
+			'#fafafa'
+		);
 		document.documentElement.style.setProperty(
 			'--darkmodebordercolor',
 			'black'
@@ -25,10 +28,6 @@ const Mode = () => {
 		document.documentElement.style.setProperty(
 			'--darkmodestrokecolor',
 			'black'
-		);
-		document.documentElement.style.setProperty(
-			'--darkmodegridimagebgcolor',
-			'#efefef'
 		);
 		document.documentElement.style.setProperty(
 			'--darkmodeoppbackcolor',
@@ -42,13 +41,16 @@ const Mode = () => {
 		light[0].style.display = 'none';
 		dark[0].style.display = 'block';
 		document.body.style.backgroundColor = '#fafafa';
-		// nav.style.backgroundColor = document.body.style.backgroundColor;
+		if (nav) nav.style.backgroundColor = document.body.style.backgroundColor;
 		arrow.forEach(a => {
 			a.classList.add('arrowlight');
 		});
+		localStorage.setItem('theme', 'light');
 	};
 
 	const handleDarkMode = () => {
+		const dark = document.getElementsByClassName('fa-moon');
+		const light = document.getElementsByClassName('fa-circle-half-stroke');
 		const nav = document.querySelector('nav');
 		const arrow = document.querySelectorAll('.arrow');
 		document.documentElement.style.setProperty(
@@ -60,10 +62,6 @@ const Mode = () => {
 		document.documentElement.style.setProperty(
 			'--darkmodestrokecolor',
 			'white'
-		);
-		document.documentElement.style.setProperty(
-			'--darkmodegridimagebgcolor',
-			'#d9d9d9'
 		);
 		document.documentElement.style.setProperty(
 			'--circlebordercolor',
@@ -80,12 +78,18 @@ const Mode = () => {
 		light[0].style.display = 'block';
 		dark[0].style.display = 'none';
 		document.body.style.backgroundColor = '#151515';
-		// nav.style.backgroundColor = document.body.style.backgroundColor;
+		if (nav) nav.style.backgroundColor = document.body.style.backgroundColor;
 		arrow.forEach(a => {
 			a.classList.remove('arrowlight');
 		});
+		localStorage.setItem('theme', 'dark');
 	};
 
+	useEffect(() => {
+		localStorage.getItem('theme') === 'dark'
+			? handleDarkMode()
+			: handleLightMode();
+	}, []);
 	return (
 		<div className="mode">
 			<i className="fas fa-circle-half-stroke" onClick={handleLightMode}></i>
@@ -97,6 +101,13 @@ const Mode = () => {
 export { Mode };
 
 const Home = () => {
+	const arrows = document.getElementsByClassName('arrow');
+
+	useEffect(() => {
+		if (localStorage.getItem('theme') === 'light') {
+			[...arrows].forEach(a => a.classList.add('arrowlight'));
+		}
+	}, [arrows]);
 	return (
 		<>
 			<Navbar />
