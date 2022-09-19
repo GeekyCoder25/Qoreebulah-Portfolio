@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { useState } from 'react';
 import Form from './Form';
 import Navbar from './Navbar';
@@ -12,6 +13,7 @@ const Contact = () => {
 	const [hour, setHour] = useState('0');
 	const [minute, setminute] = useState('0');
 	const [second, setsecond] = useState('0');
+	const contactFooter = useRef();
 
 	function handleDate() {
 		setHour(getHour);
@@ -19,7 +21,8 @@ const Contact = () => {
 		setsecond(getSecond);
 	}
 	setTimeout(handleDate, 1000);
-	const autoscroll = () => window.scrollTo(0, 2000);
+	const autoscroll = () =>
+		contactFooter.current.scrollIntoView({ behavior: 'smooth' });
 	return (
 		<>
 			<Navbar />
@@ -48,9 +51,9 @@ const Contact = () => {
 					</button>
 				</div>
 				<div className="contact-footer">
-					<Socials />
+					<Socials contactFooter />
 				</div>
-				<Form />
+				<Form contactFooter={contactFooter} />
 			</article>
 		</>
 	);

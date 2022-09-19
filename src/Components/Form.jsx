@@ -1,5 +1,5 @@
 import { useState } from 'react';
-const Form = () => {
+const Form = ({ contactFooter }) => {
 	const [namevalid, setNamevalid] = useState('');
 	const [emailvalid, setEmailvalid] = useState('');
 	const [messagevalid, setMessagevalid] = useState('');
@@ -38,6 +38,7 @@ const Form = () => {
 	};
 	return (
 		<form
+			ref={contactFooter}
 			action="https://formsubmit.co/toyibe25@gmail.com"
 			method="POST"
 			className="form"

@@ -42,8 +42,8 @@ const Mode = () => {
 		light[0].style.display = 'none';
 		dark[0].style.display = 'block';
 		document.body.style.backgroundColor = '#fafafa';
-		nav.style.backgroundColor = document.body.style.backgroundColor;
-		arrow.forEach((a) => {
+		// nav.style.backgroundColor = document.body.style.backgroundColor;
+		arrow.forEach(a => {
 			a.classList.add('arrowlight');
 		});
 	};
@@ -80,8 +80,8 @@ const Mode = () => {
 		light[0].style.display = 'block';
 		dark[0].style.display = 'none';
 		document.body.style.backgroundColor = '#151515';
-		nav.style.backgroundColor = document.body.style.backgroundColor;
-		arrow.forEach((a) => {
+		// nav.style.backgroundColor = document.body.style.backgroundColor;
+		arrow.forEach(a => {
 			a.classList.remove('arrowlight');
 		});
 	};

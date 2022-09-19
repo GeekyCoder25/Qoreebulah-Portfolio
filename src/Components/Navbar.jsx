@@ -199,7 +199,7 @@ const Navbar = () => {
 					</li>
 					<li>
 						<a
-							href="https://drive.google.com/file/d/15d7IjSBjH2SOC1vJPvDJsydvLa92ZrGa/view"
+							href="https://drive.google.com/file/d/18XD4qb0VQeRAsmZ2Xbk-D1JM7wajVvVX/view"
 							target="_blank"
 							rel="noreferrer"
 						>
