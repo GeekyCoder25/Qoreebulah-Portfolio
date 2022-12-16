@@ -5,12 +5,8 @@ const Footer = () => {
 				Developed by{' '}
 				<span className="devname-container">
 					<span className="devname">
-						<a
-							href="https://geekycoder25.github.io/portfolio2"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Toyib Lawal
+						<a href="https://toyyib.dev" target="_blank" rel="noreferrer">
+							Toyyib Lawal
 						</a>
 					</span>
 				</span>

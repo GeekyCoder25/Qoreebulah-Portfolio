@@ -1,5 +1,5 @@
 // import japan_img from '../images/Mask group.jpg';
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import AboutMini from './AboutMini';
 import Create from './Create';
 import Footer from './Footer';
@@ -98,7 +98,7 @@ const Mode = () => {
 	);
 };
 
-export { Mode };
+export {Mode};
 
 const Home = () => {
 	const arrows = document.getElementsByClassName('arrow');

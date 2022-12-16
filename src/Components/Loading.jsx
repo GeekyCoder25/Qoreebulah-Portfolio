@@ -1,5 +1,8 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router';
+import {useState, useEffect} from 'react';
+import {useNavigate} from 'react-router';
+import ohayo from '../audio/Azu-nyan Ohayo.mp3';
+import konnichiwa from '../audio/Cute Konnichiwa.mp3';
+import moshi from '../audio/Moshi Moshi - Shinobu Kocho.mp3';
 
 const Loading = () => {
 	const [countdown, setcountdown] = useState(0);
@@ -7,6 +10,8 @@ const Loading = () => {
 
 	const now = document.querySelector('.now');
 	const loadingContent = document.querySelector('.loading');
+	const date = new Date();
+	const hour = date.getHours();
 	useEffect(() => {
 		const interval = setInterval(() => {
 			if (countdown < 100) {
@@ -24,6 +29,16 @@ const Loading = () => {
 		return () => clearInterval(interval);
 	}, [countdown, navigate, now, loadingContent]);
 
+	useEffect(() => {
+		let audio = document.getElementById('audio1');
+		if (hour < 12) {
+			audio.src = ohayo;
+		} else if (hour < 16) {
+			audio.src = moshi;
+		} else audio.src = konnichiwa;
+		audio.play();
+	}, [hour]);
+
 	return (
 		<article className="loading">
 			<h1>
@@ -40,6 +55,7 @@ const Loading = () => {
 			<p>
 				Please wait <br /> a few seconds
 			</p>
+			<audio src={ohayo} id="audio1"></audio>
 		</article>
 	);
 };

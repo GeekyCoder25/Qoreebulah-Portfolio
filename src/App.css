@@ -1265,7 +1265,7 @@ i > img {
 	content: '';
 	display: flex;
 	padding-bottom: 2px;
-	background-color: var(--darkmodecolor);
+	background-color: var(--darkmodebordercolor);
 	margin-top: 5px;
 	animation: devname 1s ease forwards;
 	overflow: hidden;
